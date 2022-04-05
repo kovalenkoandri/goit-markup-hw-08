@@ -1,0 +1,40 @@
+.features__ul {
+  display: flex;
+  list-style: none;
+}
+
+.features__li {
+  width: 270px;
+}
+
+.features__li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__div {
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.features__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.features__h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.features__p {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+}
