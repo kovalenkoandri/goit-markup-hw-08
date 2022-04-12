@@ -1,17 +1,25 @@
-@use './utils/variables' as *;
-@use './base/normalize' as *;
-@use './components/visually-hidden' as *;
-@use './components/common/reset' as *;
-@use './components/common/body' as *;
-@use './components/header' as *;
-@use './components/logo' as *;
-@use './components/common/section' as *;
-@use './components/common/container' as *;
-@use './components/order' as *;
-@use './components/features' as *;
-@use './components/we-do' as *;
-@use './components/team' as *;
-@use './components/clients' as *;
-@use './components/buttons' as *;
-@use './components/portfolio' as *;
-@use './components/footer' as *;
+@import './utils/variables';
+@import './base/normalize';
+@import './components/visually-hidden';
+@import './components/common/reset';
+@import './components/common/body';
+@import './components/common/img';
+@import './components/header-mobile';
+@import './components/header';
+@import './components/nav';
+@import './components/logo';
+@import './components/common/section';
+@import './components/common/container';
+@import './components/order';
+@import './components/features';
+@import './components/we-do';
+@import './components/team';
+@import './components/clients';
+@import './components/buttons';
+@import './components/portfolio';
+@import './components/footer';
+// @media screen and (min-width: 900px) {
+//   body {
+//     background-color: blue;
+//   }
+//}

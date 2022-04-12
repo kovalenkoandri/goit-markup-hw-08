@@ -6,6 +6,14 @@
   height: 600px;
   background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/index/bg.jpg);
 
+&--mobile {
+  max-width: 480px;
+  height: 400px;
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/index/bg-mobile.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
 &__h1 {
   font-weight: 900;
   font-size: 44px;
@@ -15,6 +23,11 @@
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 30px;
+}
+
+&__h1--mobile {
+  font-size: 26px;
+  line-height: 1.62;
 }
 
 &__h1--span {

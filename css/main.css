@@ -299,6 +299,17 @@ body {
   font-family: var(--font-body);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-mobile {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
   padding: 25px 0;
@@ -318,15 +329,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__menu {
@@ -410,6 +412,32 @@ body {
   fill: currentColor;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__menu {
+  width: 40px;
+  height: 40px;
+}
+
 .logo {
   font-family: var(--font-logo);
   font-size: 26px;
@@ -455,6 +483,10 @@ body {
   padding-right: 15px;
 }
 
+.container--mobile {
+  width: 480px;
+}
+
 .order {
   max-width: 1600px;
   text-align: center;
@@ -463,6 +495,15 @@ body {
   height: 600px;
   background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../images/index/bg.jpg);
   background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/index/bg.jpg);
+}
+
+.order--mobile {
+  max-width: 480px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../images/index/bg-mobile.jpg);
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/index/bg-mobile.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .order__h1 {
@@ -474,6 +515,11 @@ body {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 30px;
+}
+
+.order__h1--mobile {
+  font-size: 26px;
+  line-height: 1.62;
 }
 
 .order__h1--span {
