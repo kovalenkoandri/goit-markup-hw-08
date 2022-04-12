@@ -1,10 +1,7 @@
 .container {
   width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
-
-  &--mobile {
-    width: 480px;
-  }
+  padding-left: 15px;
 }
