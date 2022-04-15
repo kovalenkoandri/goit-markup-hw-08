@@ -1564,14 +1564,12 @@ img {
 
 .clients-mobile__ul {
   list-style: none;
-  font-size: 0;
 }
 
 .clients-mobile__li {
   width: 210px;
   height: 92px;
   display: inline-block;
-  margin-left: -1px;
 }
 
 .clients-mobile__li:nth-child(-n+4) {
@@ -1585,20 +1583,13 @@ img {
 .clients-mobile__links {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
 }
 
 .clients-mobile__links:hover,
@@ -1610,6 +1601,11 @@ img {
 .clients-mobile__svg {
   width: 106px;
   height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .clients__h2 {
@@ -1955,13 +1951,8 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0;
+  text-align: start;
 }
 
 .footer-mobile__submit {
@@ -1971,6 +1962,7 @@ img {
   letter-spacing: 0.06em;
   color: #fff;
   margin-left: 29px;
+  vertical-align: middle;
 }
 
 .footer-mobile__icon {
@@ -1979,6 +1971,7 @@ img {
   height: 24px;
   fill: #fff;
   margin-left: 10px;
+  vertical-align: middle;
 }
 
 .footer__wrapper {

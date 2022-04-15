@@ -7,14 +7,12 @@
 
 .clients-mobile__ul {
   list-style: none;
-  font-size: 0;
 }
 
 .clients-mobile__li {
   width: 210px;
   height: 92px;
   display: inline-block;
-  margin-left: -1px;
 }
 
 .clients-mobile__li:nth-child(-n+4) {
@@ -28,13 +26,12 @@
 .clients-mobile__links {
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
 }
 
 .clients-mobile__links:hover,
@@ -46,4 +43,8 @@
 .clients-mobile__svg {
   width: 106px;
   height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
