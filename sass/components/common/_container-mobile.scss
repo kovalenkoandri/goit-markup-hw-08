@@ -1,5 +1,4 @@
 .container-mobile {
-  width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -8,5 +7,9 @@
   &--order {
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 }

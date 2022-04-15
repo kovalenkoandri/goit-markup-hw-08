@@ -6,19 +6,23 @@
 }
 
 .clients-mobile__ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
+  font-size: 0;
 }
 
 .clients-mobile__li {
   width: 210px;
   height: 92px;
+  display: inline-block;
+  margin-left: -1px;
 }
 
 .clients-mobile__li:nth-child(-n+4) {
   margin-bottom: 30px;
+}
+
+.clients-mobile__li:nth-child(2n+1) {
+  margin-right: 30px;
 }
 
 .clients-mobile__links {

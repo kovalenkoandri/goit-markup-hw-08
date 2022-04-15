@@ -8,7 +8,8 @@
 @import './components/header';
 @import './components/nav-mobile';
 @import './components/nav';
-@import './components/logo';
+@import './components/common/logo-mobile';
+@import './components/common/logo';
 @import './components/common/section-mobile';
 @import './components/common/section';
 @import './components/common/container-mobile';
@@ -24,6 +25,7 @@
 @import './components/clients';
 @import './components/buttons';
 @import './components/portfolio';
+@import './components/footer-mobile';
 @import './components/footer';
 // @media screen and (min-width: 900px) {
 //   body {
