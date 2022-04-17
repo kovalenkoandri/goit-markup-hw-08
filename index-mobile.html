@@ -19,13 +19,40 @@
         <div class="container-mobile">
             <nav class="nav-mobile">
                 <a href="" class="logo-mobile"><span class="logo-mobile logo-mobile--accent-color">Web</span>Studio</a>
-                <button type="button" class="nav-mobile__button nav-mobile__button--is-open" aria-expanded="false" data-menu-button>
-                        <svg class="nav-mobile__menu" aria-label="Переключатель мобильного меню">
-                            <use class="nav-mobile__icon-menu" href="./images/icons.svg#icon-menu-40px"></use>
-                            <use class="nav-mobile__icon-close" href="./images/icons.svg#icon-close_40px"></use>
-                        </svg>
+                <button type="button" class="nav-mobile__button nav-mobile__button--is-open" aria-expanded="false"
+                    aria-controls="menu-container" data-menu-button>
+                    <svg class="nav-mobile__menu" aria-label="Переключатель мобильного меню">
+                        <use class="nav-mobile__icon-menu" href="./images/icons.svg#icon-menu-40px"></use>
+                        <use class="nav-mobile__icon-close" href="./images/icons.svg#icon-close_40px"></use>
+                    </svg>
                 </button>
-                <!-- <div class="menu-container nav-mobile__button nav-mobile__button--is-open">SiteMap</div> -->
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="nav__menu">
+                        <li class="nav__li">
+                            <a href="./index.html" class="nav__current nav__current--color">Студия</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="./portfolio.html" class="nav__current">Портфолио</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="" class="nav__current">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="header__mail-tel">
+                        <li class="header__li">
+                            <a href="mailto:info@devstudio.com" class="header__href"><svg class="header__icon">
+                                    <use href="./images/icons.svg#icon-envelope1"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="header__li">
+                            <a href="tel:+380961111111" class="header__href"><svg class="header__icon--tel">
+                                    <use href="./images/icons.svg#icon-smartphone1"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation"></div>
+                <div class="contacts"></div>
             </nav>
         </div>
     </header>
@@ -294,45 +321,102 @@
         <section class="section-mobile">
             <div class="container-mobile">
                 <h2 class="clients-mobile__h2">Постоянные клиенты</h2>
-                <ul class="clients-mobile__ul"><!--
-                    --><li class="clients-mobile__li"><!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg"><!--
-                                --><use href="./images/icons.svg#icon-logo1"></use><!--
-                            --></svg></a><!--
-                    --></li><!--
-                    --><li class="clients-mobile__li"><!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg"><!--
-                                --><use href="./images/icons.svg#icon-logo2"></use><!--
-                            --></svg></a><!--
-                    --></li><!--
-                    --><li class="clients-mobile__li"><!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg"><!--
-                                --><use href="./images/icons.svg#icon-logo3"></use><!--
-                            --></svg></a><!--
-                    --></li><!--
-                    --><li class="clients-mobile__li"><!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg"><!--
-                                --><use href="./images/icons.svg#icon-logo4"></use><!--
-                            --></svg></a><!--
-                    --></li><!--
-                    --><li class="clients-mobile__li"><!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg"><!--
-                                --><use href="./images/icons.svg#icon-logo5"></use><!--
-                            --></svg></a><!--
-                    --></li><!--
-                    --><li class="clients-mobile__li"><!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg"><!--
-                                --><use href="./images/icons.svg#icon-logo6"></use><!--
-                            --></svg></a><!--
-                    --></li><!--
-                --></ul>
+                <ul class="clients-mobile__ul">
+                    <!--
+                    -->
+                    <li class="clients-mobile__li">
+                        <!--
+                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
+                                <!--
+                                -->
+                                <use href="./images/icons.svg#icon-logo1"></use>
+                                <!--
+                            -->
+                            </svg></a>
+                        <!--
+                    -->
+                    </li>
+                    <!--
+                    -->
+                    <li class="clients-mobile__li">
+                        <!--
+                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
+                                <!--
+                                -->
+                                <use href="./images/icons.svg#icon-logo2"></use>
+                                <!--
+                            -->
+                            </svg></a>
+                        <!--
+                    -->
+                    </li>
+                    <!--
+                    -->
+                    <li class="clients-mobile__li">
+                        <!--
+                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
+                                <!--
+                                -->
+                                <use href="./images/icons.svg#icon-logo3"></use>
+                                <!--
+                            -->
+                            </svg></a>
+                        <!--
+                    -->
+                    </li>
+                    <!--
+                    -->
+                    <li class="clients-mobile__li">
+                        <!--
+                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
+                                <!--
+                                -->
+                                <use href="./images/icons.svg#icon-logo4"></use>
+                                <!--
+                            -->
+                            </svg></a>
+                        <!--
+                    -->
+                    </li>
+                    <!--
+                    -->
+                    <li class="clients-mobile__li">
+                        <!--
+                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
+                                <!--
+                                -->
+                                <use href="./images/icons.svg#icon-logo5"></use>
+                                <!--
+                            -->
+                            </svg></a>
+                        <!--
+                    -->
+                    </li>
+                    <!--
+                    -->
+                    <li class="clients-mobile__li">
+                        <!--
+                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
+                                <!--
+                                -->
+                                <use href="./images/icons.svg#icon-logo6"></use>
+                                <!--
+                            -->
+                            </svg></a>
+                        <!--
+                    -->
+                    </li>
+                    <!--
+                -->
+                </ul>
             </div>
         </section>
     </main>
     <footer class="footer-mobile__wrapper">
         <div class="footer-mobile__container">
             <div class="footer-mobile__logo">
-                <a href="" class="logo-mobile logo-mobile--inverse"><span class="logo-mobile logo-mobile--accent-color">Web</span>Studio</a>
+                <a href="" class="logo-mobile logo-mobile--inverse"><span
+                        class="logo-mobile logo-mobile--accent-color">Web</span>Studio</a>
                 <address class="footer-mobile__address">
                     <p class="footer-mobile__p">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul class="footer-mobile__list">
@@ -385,6 +469,7 @@
         </div>
     </footer>
 </body>
+
 </html>
 <script src="./js/modal.js"></script>
 <script src="./js/menu-mobile.js"></script>
