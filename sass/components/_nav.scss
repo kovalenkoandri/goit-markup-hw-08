@@ -8,6 +8,10 @@
     list-style: none;
   }
 
+  &__li:not(:last-child) {
+    margin-right: 50px;
+  }
+
   &__current {
     color: var(--primary-text-color);
     position: relative;
@@ -32,9 +36,5 @@
     &--color::after {
       background-color: var(--accent-color);
     }
-  }
-
-  &__li:not(:last-child) {
-    margin-right: 50px;
   }
 }

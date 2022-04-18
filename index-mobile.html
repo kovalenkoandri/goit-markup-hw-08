@@ -20,39 +20,51 @@
             <nav class="nav-mobile">
                 <a href="" class="logo-mobile"><span class="logo-mobile logo-mobile--accent-color">Web</span>Studio</a>
                 <button type="button" class="nav-mobile__button nav-mobile__button--is-open" aria-expanded="false"
-                    aria-controls="menu-container" data-menu-button>
+                    aria-controls="sitemap-mobile" data-menu-button>
                     <svg class="nav-mobile__menu" aria-label="Переключатель мобильного меню">
                         <use class="nav-mobile__icon-menu" href="./images/icons.svg#icon-menu-40px"></use>
                         <use class="nav-mobile__icon-close" href="./images/icons.svg#icon-close_40px"></use>
                     </svg>
                 </button>
-                <div class="menu-container" id="menu-container" data-menu>
-                    <ul class="nav__menu">
-                        <li class="nav__li">
-                            <a href="./index.html" class="nav__current nav__current--color">Студия</a>
+                <div class="sitemap-mobile" id="sitemap-mobile" data-menu>
+                    <ul class="sitemap-mobile__ul">
+                        <li class="sitemap-mobile__li">
+                            <a class="sitemap-mobile__href" href="./index.html">Студия</a>
                         </li>
-                        <li class="nav__li">
-                            <a href="./portfolio.html" class="nav__current">Портфолио</a>
+                        <li class="sitemap-mobile__li">
+                            <a class="sitemap-mobile__href" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="nav__li">
-                            <a href="" class="nav__current">Контакты</a>
+                        <li class="sitemap-mobile__li">
+                            <a class="sitemap-mobile__href" href="">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="header__mail-tel">
-                        <li class="header__li">
-                            <a href="mailto:info@devstudio.com" class="header__href"><svg class="header__icon">
-                                    <use href="./images/icons.svg#icon-envelope1"></use>
-                                </svg>info@devstudio.com</a>
+                    <ul class="sitemap-mobile__list">
+                        <li class="sitemap-mobile__item">
+                            <a class="sitemap-mobile__tel" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
-                        <li class="header__li">
-                            <a href="tel:+380961111111" class="header__href"><svg class="header__icon--tel">
-                                    <use href="./images/icons.svg#icon-smartphone1"></use>
-                                </svg>+38 096 111 11 11</a>
+                        <li class="sitemap-mobile__item">
+                            <a class="sitemap-mobile__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="sitemap-mobile__cardset">
+                        <li class="sitemap-mobile__card">
+                            <a class="sitemap-mobile__socials" href="">
+                                Instagram</a>
+                        </li>
+                        <li class="sitemap-mobile__card">
+                            <a class="sitemap-mobile__socials" href="">
+                                Twitter</a>
+                        </li>
+                        <li class="sitemap-mobile__card">
+                            <a class="sitemap-mobile__socials" href="">
+                                Facebook</a>
+                        </li>
+                        <li class="sitemap-mobile__card">
+                            <a class="sitemap-mobile__socials" href="">
+                                LinkedIn</a>
                         </li>
                     </ul>
                 </div>
-                <div class="navigation"></div>
-                <div class="contacts"></div>
             </nav>
         </div>
     </header>
@@ -322,92 +334,30 @@
             <div class="container-mobile">
                 <h2 class="clients-mobile__h2">Постоянные клиенты</h2>
                 <ul class="clients-mobile__ul">
-                    <!--
-                    -->
                     <li class="clients-mobile__li">
-                        <!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
-                                <!--
-                                -->
+                        <a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
                                 <use href="./images/icons.svg#icon-logo1"></use>
-                                <!--
-                            -->
                             </svg></a>
-                        <!--
-                    -->
-                    </li>
-                    <!--
-                    -->
                     <li class="clients-mobile__li">
-                        <!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
-                                <!--
-                                -->
+                        <a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
                                 <use href="./images/icons.svg#icon-logo2"></use>
-                                <!--
-                            -->
                             </svg></a>
-                        <!--
-                    -->
-                    </li>
-                    <!--
-                    -->
                     <li class="clients-mobile__li">
-                        <!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
-                                <!--
-                                -->
+                        <a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
                                 <use href="./images/icons.svg#icon-logo3"></use>
-                                <!--
-                            -->
                             </svg></a>
-                        <!--
-                    -->
-                    </li>
-                    <!--
-                    -->
                     <li class="clients-mobile__li">
-                        <!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
-                                <!--
-                                -->
+                        <a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
                                 <use href="./images/icons.svg#icon-logo4"></use>
-                                <!--
-                            -->
                             </svg></a>
-                        <!--
-                    -->
-                    </li>
-                    <!--
-                    -->
                     <li class="clients-mobile__li">
-                        <!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
-                                <!--
-                                -->
+                        <a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
                                 <use href="./images/icons.svg#icon-logo5"></use>
-                                <!--
-                            -->
                             </svg></a>
-                        <!--
-                    -->
-                    </li>
-                    <!--
-                    -->
                     <li class="clients-mobile__li">
-                        <!--
-                        --><a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
-                                <!--
-                                -->
+                        <a href="" class="clients-mobile__links"><svg class="clients-mobile__svg">
                                 <use href="./images/icons.svg#icon-logo6"></use>
-                                <!--
-                            -->
                             </svg></a>
-                        <!--
-                    -->
-                    </li>
-                    <!--
-                -->
                 </ul>
             </div>
         </section>

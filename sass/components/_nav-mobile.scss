@@ -38,21 +38,3 @@
     display: block;
   }
 }
-
-@media screen and (max-width: 768px) {
-.menu-container {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  background-color: antiquewhite;
-  display: none;
-
-  &--is-open {
-    display: block;
-  }
-    }
-}
