@@ -69,56 +69,56 @@
         </div>
     </header>
     <main>
-        <section class="order order--mobile">
+        <section class="order-mobile">
             <div class="container-mobile--order">
-                <h1 class="order__h1 order__h1--mobile">
+                <h1 class="order-mobile__h1">
                     Эффективные решения
-                    <span class="order__h1--span">для вашего бизнеса</span>
+                    <span class="order-mobile__h1--span">для вашего бизнеса</span>
                 </h1>
-                <button type="button" class="order__button" data-modal-open>Заказать услугу</button>
-                <div class="order__backdrop order__backdrop--is-hidden" data-modal>
-                    <div class="order__modal">
-                        <button type="button" data-modal-close class="order__close">
-                            <svg class="order__close-svg">
+                <button type="button" class="order-mobile__button" data-modal-open>Заказать услугу</button>
+                <div class="order-mobile__backdrop order-mobile__backdrop--is-hidden" data-modal>
+                    <div class="order-mobile__modal">
+                        <button type="button" data-modal-close class="order-mobile__close">
+                            <svg class="order-mobile__close-svg">
                                 <use href="./images/icons.svg#icon-close11"></use>
                             </svg>
                         </button>
-                        <p class="order__p">Оставьте свои данные, мы вам перезвоним</p>
-                        <form autocomplete="on" novalidate class="order__form">
-                            <label for="name" class="order__label">Имя</label>
-                            <div class="order__input--position">
-                                <input type="text" id="name" class="order__input" placeholder=" " autofocus />
-                                <svg class="order__svg order__svg--name">
+                        <p class="order-mobile__p">Оставьте свои данные, мы вам перезвоним</p>
+                        <form autocomplete="on" novalidate class="order-mobile__form">
+                            <label for="name" class="order-mobile__label">Имя</label>
+                            <div class="order-mobile__input--position">
+                                <input type="text" id="name" class="order-mobile__input" placeholder=" " autofocus />
+                                <svg class="order-mobile__svg order-mobile__svg--name">
                                     <use href="./images/icons.svg#icon-name12-12"></use>
                                 </svg>
                             </div>
-                            <label for="tel" class="order__label">Телефон</label>
-                            <div class="order__input--position">
-                                <input type="tel" id="tel" class="order__input" placeholder=" " />
-                                <svg class="order__svg order__svg--tel">
+                            <label for="tel" class="order-mobile__label">Телефон</label>
+                            <div class="order-mobile__input--position">
+                                <input type="tel" id="tel" class="order-mobile__input" placeholder=" " />
+                                <svg class="order-mobile__svg order-mobile__svg--tel">
                                     <use href="./images/icons.svg#icon-tel13-13"></use>
                                 </svg>
                             </div>
-                            <label for="email" class="order__label">Почта</label>
-                            <div class="order__input--position">
-                                <input type="email" id="email" class="order__input" placeholder=" " />
-                                <svg class="order__svg order__svg--email">
+                            <label for="email" class="order-mobile__label">Почта</label>
+                            <div class="order-mobile__input--position">
+                                <input type="email" id="email" class="order-mobile__input" placeholder=" " />
+                                <svg class="order-mobile__svg order-mobile__svg--email">
                                     <use href="./images/icons.svg#icon-mail15-12"></use>
                                 </svg>
                             </div>
-                            <label for="comment" class="order__label">Комментарий</label>
+                            <label for="comment" class="order-mobile__label">Комментарий</label>
                             <textarea rows="5" placeholder="Введите текст" id="comment"
-                                class="order__comment"></textarea>
-                            <div class="order__checkbox--position">
-                                <label><input type="checkbox" class="order__checkbox visually-hidden" />
-                                    <svg class="order__checkbox--custom">
+                                class="order-mobile__comment"></textarea>
+                            <div class="order-mobile__checkbox--position">
+                                <label class="order-mobile__tag"><input type="checkbox" class="order-mobile__checkbox visually-hidden" />
+                                    <svg class="order-mobile__checkbox--custom">
                                         <use href="./images/icons.svg#icon-check16-15"></use>
                                     </svg>
                                 </label>
-                                <span class="order__span">Соглашаюсь с рассылкой и принимаю
-                                    <span class="order__span--color">Условия договора</span></span>
+                                <span class="order-mobile__span">Соглашаюсь с рассылкой и принимаю
+                                    <span class="order-mobile__span order-mobile__span--color">Условия договора</span></span>
                             </div>
-                            <button type="submit" class="order__submit">Отправить</button>
+                            <button type="submit" class="order-mobile__submit">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -421,5 +421,5 @@
 </body>
 
 </html>
-<script src="./js/modal.js"></script>
+<script src="./js/modal-mobile.js"></script>
 <script src="./js/menu-mobile.js"></script>

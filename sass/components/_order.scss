@@ -80,6 +80,11 @@
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &--mobile {
+      width: 450px;
+      // height: 609px;
+    }
 }
 
 &__close {
@@ -117,12 +122,20 @@
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
+
+  &--mobile {
+    line-height: 1.5;
+  }
 }
 
 &__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  &--mobile {
+    display: block;
+  }
 }
 
 &__label {
@@ -213,6 +226,16 @@
   align-items: center;
   justify-content: space-between;
   width: 425px;
+
+  &--mobile {
+    display: block;
+    margin-left: 0;
+    width: auto;
+  }
+}
+
+&__tag-mobile {
+  font-size: 0;
 }
 
 &__checkbox:checked + &__checkbox--custom {
@@ -243,6 +266,11 @@
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
+
+  &--mobile {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 &__span--color {
