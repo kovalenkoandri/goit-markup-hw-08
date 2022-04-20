@@ -14,19 +14,20 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
-<body>
+<body class="sitemap-mobile--is-open">
     <header class="header-mobile">
         <div class="container-mobile">
             <nav class="nav-mobile">
-                <a href="" class="logo-mobile"><span class="logo-mobile logo-mobile--accent-color">Web</span>Studio</a>
+                <a href="" class="logo-mobile">
+                    <span class="logo-mobile logo-mobile--accent-color">Web</span>Studio</a>
                 <button type="button" class="nav-mobile__button nav-mobile__button--is-open" aria-expanded="false"
-                    aria-controls="sitemap-mobile" data-menu-button>
+                    aria-controls="sitemap-mobile" button>
                     <svg class="nav-mobile__menu" aria-label="Переключатель мобильного меню">
                         <use class="nav-mobile__icon-menu" href="./images/icons.svg#icon-menu-40px"></use>
                         <use class="nav-mobile__icon-close" href="./images/icons.svg#icon-close_40px"></use>
                     </svg>
                 </button>
-                <div class="sitemap-mobile" id="sitemap-mobile" data-menu>
+                <div class="sitemap-mobile" id="sitemap-mobile" menu>
                     <ul class="sitemap-mobile__ul">
                         <li class="sitemap-mobile__li">
                             <a class="sitemap-mobile__href" href="./index.html">Студия</a>
@@ -110,13 +111,15 @@
                             <textarea rows="5" placeholder="Введите текст" id="comment"
                                 class="order-mobile__comment"></textarea>
                             <div class="order-mobile__checkbox--position">
-                                <label class="order-mobile__tag"><input type="checkbox" class="order-mobile__checkbox visually-hidden" />
+                                <label class="order-mobile__tag"><input type="checkbox"
+                                        class="order-mobile__checkbox visually-hidden" />
                                     <svg class="order-mobile__checkbox--custom">
                                         <use href="./images/icons.svg#icon-check16-15"></use>
                                     </svg>
                                 </label>
                                 <span class="order-mobile__span">Соглашаюсь с рассылкой и принимаю
-                                    <span class="order-mobile__span order-mobile__span--color">Условия договора</span></span>
+                                    <span class="order-mobile__span order-mobile__span--color">Условия
+                                        договора</span></span>
                             </div>
                             <button type="submit" class="order-mobile__submit">Отправить</button>
                         </form>

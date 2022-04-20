@@ -10,16 +10,16 @@
 }
 
 .clients-mobile__li {
-  width: 210px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
   display: inline-block;
 }
 
-.clients-mobile__li:nth-child(-n+4) {
+.clients-mobile__li:nth-child(-n + 4) {
   margin-bottom: 30px;
 }
 
-.clients-mobile__li:nth-child(2n+1) {
+.clients-mobile__li:nth-child(2n + 1) {
   margin-right: 30px;
 }
 

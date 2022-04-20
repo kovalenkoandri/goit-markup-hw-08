@@ -7,6 +7,13 @@
     border: none;
     background-color: transparent;
     margin-left: auto;
+    z-index: 2;
+
+    &--is-open {
+      position: sticky;
+      top: 0;
+      right: 0;
+    }
   }
 
   &__menu {

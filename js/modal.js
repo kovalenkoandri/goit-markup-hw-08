@@ -10,6 +10,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('order__backdrop--is-hidden');
-    document.body.classList.toggle('modal-open');
+    document.body.classList.toggle('nav-mobile--is-open');
   }
 })();
