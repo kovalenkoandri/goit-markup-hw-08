@@ -1,7 +1,7 @@
-.header {
+.header-tablet {
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 
   &__container {
     display: flex;
@@ -10,20 +10,21 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    width: 1200px;
+    width: 768px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   &__mail-tel {
     display: flex;
+    flex-direction: column;
     margin-left: auto;
-    align-items: center;
     list-style: none;
   }
 
   &__li:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
   }
 
   &__href {

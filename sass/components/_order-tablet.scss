@@ -1,27 +1,22 @@
-.order {
-  max-width: 1600px;
+.order-tablet {
+  width: 768px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 600px;
-  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/index/bg.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/index/bg-tablet.jpg);
 
   &__h1 {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 30px;
-  }
-
-  &__h1--mobile {
-    font-size: 26px;
-    line-height: 1.62;
   }
 
   &__h1--span {
@@ -47,7 +42,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2); 
     opacity: 1;
     visibility: visible;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
