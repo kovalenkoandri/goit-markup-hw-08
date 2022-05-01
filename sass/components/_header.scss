@@ -1,10 +1,10 @@
 .header {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-device-width: 767px) {
     padding-top: 15px;
     padding-bottom: 15px;
-    position: relative;
+    border-bottom: 1px solid #ececec;
 
-    .header__container {
+    &__container {
       max-width: 480px;
       margin-right: auto;
       margin-left: auto;
@@ -55,9 +55,9 @@
         fill: currentColor;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        // @media screen and (min-width: 768px) {
-        //   display: none;
-        // }
+        @media screen and (max-device-width: 767px) {
+          display: block;
+        }
       }
 
       &__menu:hover,
@@ -175,61 +175,61 @@
       display: none;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-      border-bottom: 1px solid #ececec;
-      padding-top: 21px;
-      padding-bottom: 21px;
+  @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    border-bottom: 1px solid #ececec;
+    padding-top: 21px;
+    padding-bottom: 21px;
 
-      &__container {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        width: 768px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+    &__container {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      width: 768px;
+      margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__mail-tel {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      list-style: none;
+    }
+
+    &__li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__href {
+      color: var(--secondary-text-color);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
       }
+    }
 
-      &__mail-tel {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        list-style: none;
-      }
+    &__envelope {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+      fill: currentColor;
+    }
 
-      &__li:not(:last-child) {
-        margin-bottom: 10px;
-      }
-
-      &__href {
-        color: var(--secondary-text-color);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-          color: var(--accent-color);
-        }
-      }
-
-      &__envelope {
-        margin-right: 10px;
-        width: 16px;
-        height: 12px;
-        fill: currentColor;
-      }
-
-      &__smartphone {
-        margin-right: 10px;
-        width: 12px;
-        height: 16px;
-        fill: currentColor;
-      }
+    &__smartphone {
+      margin-right: 10px;
+      width: 12px;
+      height: 16px;
+      fill: currentColor;
+    }
 
     .logo {
       font-family: var(--font-logo);
@@ -300,7 +300,7 @@
       display: none;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-width: 1200px) {
     border-bottom: 1px solid #ececec;
     padding-top: 24px;
     padding-bottom: 25px;

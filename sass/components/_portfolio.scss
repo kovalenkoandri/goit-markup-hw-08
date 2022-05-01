@@ -1,6 +1,9 @@
 .portfolio {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-device-width: 767px) {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__li {
       margin-bottom: 30px;
@@ -64,7 +67,7 @@
       position: relative;
       background-color: #fff;
     }
-
+    
     &__h3 {
       font-size: 18px;
       line-height: 2;
@@ -72,18 +75,21 @@
       margin-bottom: 4px;
       color: var(--primary-text-color);
     }
-
+    
     &__p {
       font-size: 16px;
       line-height: 1.88;
       color: #757575;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: calc(-1 * 15px);
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
 
     &__li {
       overflow: hidden;
@@ -166,7 +172,7 @@
       color: #757575;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--gap));

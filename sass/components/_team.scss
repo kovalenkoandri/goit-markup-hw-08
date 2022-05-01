@@ -1,5 +1,5 @@
 .team {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-device-width: 767px) {
     list-style: none;
 
     &__h2 {
@@ -93,7 +93,7 @@
       height: 20px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -197,7 +197,7 @@
       fill: currentColor;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-width: 1200px) {
     display: flex;
     list-style: none;
 

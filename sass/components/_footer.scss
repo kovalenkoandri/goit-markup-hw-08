@@ -1,5 +1,5 @@
 .footer {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-device-width: 767px) {
     background-color: var(--footer-bg-color);
     padding: 60px 0;
 
@@ -156,7 +156,7 @@
       vertical-align: middle;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
     background-color: var(--footer-bg-color);
     padding: 60px 0;
 
@@ -316,7 +316,7 @@
       vertical-align: middle;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-width: 1200px) {
     background-color: var(--footer-bg-color);
     padding: 60px 0;
 
