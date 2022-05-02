@@ -3231,15 +3231,6 @@ img {
   .team__li:not(:last-child) {
     margin-bottom: 30px;
   }
-  .team__photo-450-460 {
-    width: 450px;
-  }
-  .team__photo-354-374 {
-    display: none;
-  }
-  .team__photo-270-260 {
-    display: none;
-  }
   .team__div {
     padding: 30px 0;
   }
@@ -3329,18 +3320,6 @@ img {
   .team__li:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
-  .team__photo-450-460 {
-    display: none;
-  }
-  .team__photo-354-374 {
-    width: 354px;
-  }
-  .team__photo-270-260 {
-    display: none;
-  }
-  .team__photo-354-374 {
-    width: 354px;
-  }
   .team__div {
     padding: 30px 0;
   }
@@ -3425,15 +3404,6 @@ img {
   }
   .team__li:not(:last-child) {
     margin-right: 30px;
-  }
-  .team__photo-450-460 {
-    display: none;
-  }
-  .team__photo-354-374 {
-    display: none;
-  }
-  .team__photo-270-260 {
-    width: 270px;
   }
   .team__div {
     padding: 30px 0;
@@ -4150,15 +4120,6 @@ img {
     position: relative;
     text-decoration: none;
   }
-  .portfolio__photo-450-294 {
-    width: 450px;
-  }
-  .portfolio__photo-354-294 {
-    display: none;
-  }
-  .portfolio__photo-370-294 {
-    display: none;
-  }
   .portfolio__div {
     position: absolute;
     top: 0;
@@ -4244,15 +4205,6 @@ img {
     position: relative;
     text-decoration: none;
   }
-  .portfolio__photo-450-294 {
-    display: none;
-  }
-  .portfolio__photo-354-294 {
-    width: 354px;
-  }
-  .portfolio__photo-370-294 {
-    display: none;
-  }
   .portfolio__div {
     position: absolute;
     top: 0;
@@ -4333,15 +4285,6 @@ img {
     display: block;
     position: relative;
     text-decoration: none;
-  }
-  .portfolio__photo-450-294 {
-    display: none;
-  }
-  .portfolio__photo-354-294 {
-    display: none;
-  }
-  .portfolio__photo-370-294 {
-    width: 370px;
   }
   .portfolio__div {
     position: absolute;
