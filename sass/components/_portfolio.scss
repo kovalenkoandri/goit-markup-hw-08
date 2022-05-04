@@ -9,12 +9,12 @@
       margin-bottom: 30px;
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     &__li:hover,
     &__li:focus {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-    
+
     &__links {
       display: block;
       position: relative;
@@ -33,13 +33,13 @@
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     &__links:hover &__div,
     &__links:focus &__div {
       bottom: 0;
       // transform: translateY(0);
     }
-    
+
     &__text {
       background-color: var(--accent-color);
       color: #fff;
@@ -58,7 +58,7 @@
       position: relative;
       background-color: #fff;
     }
-    
+
     &__h3 {
       font-size: 18px;
       line-height: 2;
@@ -66,7 +66,7 @@
       margin-bottom: 4px;
       color: var(--primary-text-color);
     }
-    
+
     &__p {
       font-size: 16px;
       line-height: 1.88;
@@ -84,7 +84,6 @@
 
     &__li {
       overflow: hidden;
-      display: inline-block;
       display: flex;
       margin: 15px;
       flex-basis: calc((100% - 30px * 2) / 2);
@@ -104,20 +103,20 @@
 
     &__div {
       position: absolute;
-      top: 0;
+      // top: 0;
+      bottom: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.9;
-      background-color: var(--accent-color);
-      color: #fff;
       transform: translateY(100%);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__links:hover &__div,
     &__links:focus &__div {
-      transform: translateY(0);
+      // transform: translateY(0);
+      bottom: 100%;
     }
 
     &__text {
@@ -125,6 +124,9 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 1.56;
+      opacity: 0.9;
+      background-color: var(--accent-color);
+      color: #fff;
     }
 
     &__wrapper {
@@ -179,20 +181,20 @@
 
     &__div {
       position: absolute;
-      top: 0;
+      // top: 0;
+      bottom: -100%;
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.9;
-      background-color: var(--accent-color);
-      color: #fff;
-      transform: translateY(100%);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      // transform: translateY(100%);
+      // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__links:hover &__div,
     &__links:focus &__div {
-      transform: translateY(0);
+      // transform: translateY(0);
+      bottom: 0;
     }
 
     &__text {
@@ -200,6 +202,9 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 1.56;
+      opacity: 0.9;
+      background-color: var(--accent-color);
+      color: #fff;
     }
 
     &__wrapper {
