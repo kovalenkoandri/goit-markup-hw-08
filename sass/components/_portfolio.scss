@@ -5,42 +5,45 @@
     flex-direction: column;
     align-items: center;
 
-    &__li {
+    &__li:not(:last-child) {
       margin-bottom: 30px;
-      overflow: hidden;
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+    
     &__li:hover,
     &__li:focus {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-
+    
     &__links {
       display: block;
       position: relative;
       text-decoration: none;
+      overflow: hidden;
     }
 
     &__div {
       position: absolute;
-      top: 0;
+      // top: 0;
+      bottom: -100%;
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.9;
-      background-color: var(--accent-color);
-      color: #fff;
-      transform: translateY(100%);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      // transform: translateY(100%);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+    
     &__links:hover &__div,
     &__links:focus &__div {
-      transform: translateY(0);
+      bottom: 0;
+      // transform: translateY(0);
     }
-
+    
     &__text {
+      background-color: var(--accent-color);
+      color: #fff;
+      opacity: 0.9;
       padding: 77px 24px;
       font-weight: 400;
       font-size: 18px;
