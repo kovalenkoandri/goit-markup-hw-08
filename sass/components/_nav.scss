@@ -61,9 +61,10 @@
 
     &__ul {
       list-style: none;
-      position: absolute;
-      top: 48px;
-      left: 40px;
+      // position: absolute;
+      text-align: left;
+      // top: 48px;
+      // left: 40px;
     }
 
     &__li:not(:last-child) {
@@ -91,6 +92,7 @@
       position: absolute;
       left: 40px;
       bottom: 134px;
+      text-align: left;
     }
 
     &__item:not(:last-child) {

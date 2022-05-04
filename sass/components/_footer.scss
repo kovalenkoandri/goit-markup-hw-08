@@ -170,9 +170,6 @@
       display: flex;
       align-items: baseline;
       flex-wrap: wrap;
-      width: 768px;
-      padding-left: 76px;
-      padding-right: 89px;
       justify-content: space-around;
       margin-left: auto;
       margin-right: auto;
@@ -181,6 +178,7 @@
 
     &__logo {
       width: 232px;
+      margin-right: auto;
     }
 
     &__address {
@@ -210,6 +208,7 @@
 
     &__join {
       width: 206px;
+      margin-right: auto;
     }
 
     &__invite {
