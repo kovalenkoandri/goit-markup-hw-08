@@ -2350,6 +2350,9 @@ img {
     display: inline-block;
     margin-bottom: 15px;
   }
+  .buttons__li:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
   .buttons__li:not(:last-child) {
     margin-right: 8px;
   }
@@ -2878,7 +2881,6 @@ img {
   }
   .footer__logo {
     width: 232px;
-    margin-right: auto;
   }
   .footer__address {
     font-style: normal;
@@ -2902,7 +2904,6 @@ img {
   }
   .footer__join {
     width: 206px;
-    margin-right: auto;
   }
   .footer__invite {
     font-weight: 700;
