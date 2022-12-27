@@ -17,10 +17,6 @@
       color: #000;
       fill: currentColor;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-      // @media screen and (max-device-width: 767px) {
-      //   display: block;
-      // }
     }
 
     &__menu:hover,
@@ -61,10 +57,7 @@
 
     &__ul {
       list-style: none;
-      // position: absolute;
       text-align: left;
-      // top: 48px;
-      // left: 40px;
     }
 
     &__li:not(:last-child) {
